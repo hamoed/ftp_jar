@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80cfff"
+    tools:context=".FolderPackage.SecondActivity">
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textAlignment="textStart"
+        android:textSize="18dp"
+        android:paddingStart="20dp"
+        android:text="Server"
+        android:textColor="@android:color/white"
+        android:background="#80cfff"/>
+    <Button
+        android:text="/"
+        android:background="@drawable/ic_button_rounded"
+        android:id="@+id/up_button"
+        android:layout_width="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/info"/>
+    <TextView
+        android:layout_toRightOf="@+id/up_button"
+        android:id="@+id/cur_dir"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/info"
+        android:text="coba\ddfdfd\dfdfd\dfdsfd\dfdfd\dfdfd\dfdfd\dfdfd123"
+        android:textSize="14dp"
+        android:ellipsize="start"
+        android:background="@drawable/ic_rounded"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/white"
+        android:singleLine="true"
+        android:paddingLeft="7dp"
+        android:paddingRight="5dp"/>
+    <Button
+        android:text="Unggah"
+        android:id="@+id/upload_button"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/list_folder"
+        android:background="@drawable/ic_button_rounded"
+        android:layout_height="35dp" />
+    <ListView
+        android:id="@+id/list_folder"
+        android:background="#33446A"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@+id/cur_dir">
+    </ListView>
+    <TextView
+        android:id="@+id/log_ket"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/upload_button"
+        android:layout_height="20dp"
+        android:gravity="center_horizontal"
+        android:text="Log FTP"
+        android:textColor="@android:color/white"/>
+    <ListView
+        android:id="@+id/log_file"
+        android:background="#badcf1"
+        android:layout_below="@+id/log_ket"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+
+</RelativeLayout>

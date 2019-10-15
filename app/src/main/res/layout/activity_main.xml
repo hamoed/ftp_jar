@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:label="@string/app_name"
+    android:background="#80cfff"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="35dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Login"
+            android:textSize="25dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:layout_height="45dp"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/ip"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/server"
+            android:inputType="text"
+            android:background="@drawable/ic_rounded"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="5dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="15dp" />
+
+        <EditText
+            android:id="@+id/port"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/port"
+            android:inputType="number"
+            android:background="@drawable/ic_rounded"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="5dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="65" />
+
+        <EditText
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/username"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="115"
+            android:background="@drawable/ic_rounded"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="5dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ic_rounded"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:hint="@string/pass"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="165dp" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/black"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:background="@drawable/ic_button_rounded"
+            android:text="@string/konek"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="444dp" />
+
+        <TextView
+            android:id="@+id/consol"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="ahha"
+            android:layout_marginTop="50dp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            />
+
+        <ListView
+            android:id="@+id/log"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:background="#dceff5">
+        </ListView>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
